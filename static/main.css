@@ -1,0 +1,7 @@
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+#container ul li {
+    list-style-type: none;
+}

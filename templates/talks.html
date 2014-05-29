@@ -1,0 +1,19 @@
+xXx PARENT=templates/base.html xXx
+xXx TITLE xXx
+    Talks
+xXx TTYL xXx
+xXx CONTENT xXx
+<span><a href="/">#infoforcefeed</a> / Talks</span>
+<p>Talks</p>
+<ul>
+    xXx LOOP talk TALKS xXx
+    <li>
+        <div>
+            <h3>xXx talk$title xXx</h3>
+            <a href="xXx talk$talk_link xXx"><img src="xXx talk$img xXx" /></a>
+            <p>xXx talk$description xXx</p>
+        </div>
+    </li>
+    xXx BBL xXx
+</ul>
+xXx TTYL xXx

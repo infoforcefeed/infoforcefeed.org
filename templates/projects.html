@@ -1,0 +1,19 @@
+xXx PARENT=templates/base.html xXx
+xXx TITLE xXx
+    Projects
+xXx TTYL xXx
+xXx CONTENT xXx
+<span><a href="/">#infoforcefeed</a> / Projects</span>
+<p>Projects members have done or are working on.</p>
+<ul>
+    xXx LOOP project PROJECTS xXx
+    <li>
+        <div>
+            <h3>xXx project$title xXx</h3>
+            <p>xXx project$description xXx</p>
+            <a href="xXx project$link xXx">More &raquo;</a>
+        </div>
+    </li>
+    xXx BBL xXx
+</ul>
+xXx TTYL xXx
