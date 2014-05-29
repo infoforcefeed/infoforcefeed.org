@@ -8,7 +8,48 @@ from os import listdir
 DEFAULT_LANGUAGE = "en"
 # Question: Hey qpfiffer, why is this indented all weird?
 # Man I don't know leave me alone.
-BASE_CONTEXT = {}
+BASE_CONTEXT = {
+    "PROJECTS": [
+        {
+            "title": "OlegDB",
+            "description": "The ugly duckling database of champions.",
+            "link": "https://olegdb.org"
+        },
+        {
+            "title": "GRESHUNKEL",
+            "description": "The static site generator that built this and the OlegDB website. Written in python with much leering and hatred.",
+            "link": "https://github.com/infoforcefeed/OlegDB-Website/tree/master/greshunkel"
+        },
+        {
+            "title": "shitstream",
+            "description": "Radio music service and streaming written entirely in bash.",
+            "link": "https://github.com/nijotz/shitstream"
+        },
+        {
+            "title": "Goat Tower",
+            "description": "Ambitious and horrifying MUD.",
+            "link": "https://github.com/infoforcefeed/goat-tower"
+        },
+        {
+            "title": "tenyks",
+            "description": "Pluggable, extensible, concurrent multi-threaded IRC bot.",
+            "link": "https://github.com/kyleterry/tenyks"
+        },
+        {
+            "title": "#metaforcefeed",
+            "description": "reddit-esque task-tracker. Designed to test OlegDB as a backend.",
+            "link": "reddit-esque task-tracker. Designed to test OlegDB as a backend."
+        },
+    ],
+    "TALKS": [
+        {
+            "title": "Shitstream Presentation",
+            "description": "Ad-hoc presentation nijotz gave on his <a href=\"/projects.html\">shitstream</a> project. Link is to full talk, 114MB.",
+            "img": "./static/img/nick_shitstream_preview.jpg",
+            "talk_link": "./static/vid/nick_shitstream_2014-05-24.webm"
+        }
+    ]
+}
 
 def build_blog_context(default_context):
     default_context['POSTS'] = []
