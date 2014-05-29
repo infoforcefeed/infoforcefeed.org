@@ -212,9 +212,7 @@ def main(context):
     from greshunkel.context import DEFAULT_LANGUAGE
     context['DEFAULT_LANGUAGE'] = DEFAULT_LANGUAGE
     all_templates = []
-    required_dirs = ['./built', './built/blog']
-    for version in context['ALL_VERSIONS']:
-        required_dirs.append('./built/docs/' + version + "/" + DEFAULT_LANGUAGE)
+    required_dirs = ['./built']
 
     for dirn in required_dirs:
         if not path.exists(dirn):
@@ -242,26 +240,8 @@ def main(context):
                     }
 
     for base_file in tree:
+        print "Rendering {}".format(base_file)
         _render_file(tree[base_file], context)
-
-    for post in context['POSTS']:
-        # UGLY HACK YOU DUMB SHIT
-        context['dumb_meta'] = [post]
-        post_meta = parse_file(context, BLOGPOST_FILE)
-        _render_file(post_meta, context, output_filename="blog/" + post['built_filename'])
-
-    for vers,vers_context in context['docs'].iteritems():
-        from greshunkel.context import DEFAULT_LANGUAGE
-        # UGLY HACK YOU DUMB SHIT
-        for docinfo,docvalue in vers_context.iteritems():
-            context[docinfo] = docvalue
-        desired_fname = './docs/{vers}/{lang}/{filename}'.format(
-            vers=vers, lang=DEFAULT_LANGUAGE, filename=DOCUMENTATION_FILE)
-        post_meta = parse_file(context, DOCUMENTATION_FILE)
-        _render_file(post_meta, context, output_filename=desired_fname)
-        # Clear out the context so we don't get issues
-        for docinfo,docvalue in vers_context.iteritems():
-            context[docinfo] = ""
 
     # BeCaUsE WhY NoT
     return 0

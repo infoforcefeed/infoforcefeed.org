@@ -8,37 +8,7 @@ from os import listdir
 DEFAULT_LANGUAGE = "en"
 # Question: Hey qpfiffer, why is this indented all weird?
 # Man I don't know leave me alone.
-BASE_CONTEXT = { "questions":
-            [ "Is this a joke?"
-            , "Why are you doing this?"
-            , "Can I use this in production?"
-            , "Should I use this in production?"
-            , "Why did you make X the way it is? Other people do Y."
-            , "Are you guys CS 100 students?"
-            , "What sets OlegDB apart from Leading NoSQL Data Solution X&trade;?"
-            , "What other projects do you like?"
-            ],
-            "answers":
-            [ "No. We use this everyday for all of our projects."
-            , "\"My goal is to outrank redis with one of the worst OSS products on the free market.\"<p class=\"italic\">Kyle Terry, Senior Developer</p>"
-            , "Yeah, sure whatever."
-            , "Yes, most definitely."
-            , "Well, we're trend-setters. Clearly our way of accomplishing things just hasn't been accepted yet."
-            , "We were. Never really made it past that."
-            , "With our stubborn dedication to quality, C and a lack of experience, we bring a unique perspective to an otherwise ugly and lacking marketplace. Arbitrary decisions, a lack of strong leadership and internal arguments haved turned the project into a double-edged sword, ready to cut into anyone and anything."
-            ,
-            """ We like every flavor-of-the-week database. Here are a couple:
-            <ul>
-                <li><a href="http://fallabs.com/kyotocabinet/">Kyoto Cabinet</a></li>
-                <li><a href="http://redis.io/">Redis</a></li>
-                <li><a href="http://www.postgresql.org/">PostgreSQL</a></li>
-                <li><a href="http://sphia.org/">Sophia</a></li>
-                <li><a href="http://www.actordb.com/">ActorDB</a></li>
-                <li><a href="https://github.com/shuttler/nessDB">NessDB</a></li>
-            </ul>
-            """
-            ],
-        }
+BASE_CONTEXT = {}
 
 def build_blog_context(default_context):
     default_context['POSTS'] = []
