@@ -16,6 +16,11 @@ BASE_CONTEXT = {
             "link": "https://olegdb.org"
         },
         {
+            "title": "logpurge",
+            "description": "Logarhythmically purge backup files in order of importance. More recent and importan files are kept in closed intervals, while older files are removed.",
+            "link": "https://github.com/nijotz/logpurge"
+        },
+        {
             "title": "GRESHUNKEL",
             "description": "The static site generator that built this and the OlegDB website. Written in python with much leering and hatred.",
             "link": "https://github.com/infoforcefeed/OlegDB-Website/tree/master/greshunkel"
