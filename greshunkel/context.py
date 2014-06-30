@@ -43,8 +43,13 @@ BASE_CONTEXT = {
         {
             "title": "#metaforcefeed",
             "description": "reddit-esque task-tracker. Designed to test OlegDB as a backend.",
-            "link": "reddit-esque task-tracker. Designed to test OlegDB as a backend."
+            "link": "http://meta.infoforcefeed.org/"
         },
+        {
+            "title": "Entropy Meter",
+            "description": "An entropy meter that measures Jira chaos via the Dashing web framework. Built in Ruby for some reason.",
+            "link": "https://github.com/nijotz/entropy-meter"
+        }
     ],
     "TALKS": [
         {
