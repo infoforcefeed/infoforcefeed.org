@@ -64,6 +64,13 @@ BASE_CONTEXT = {
             "img": "./static/img/kyles_go_talk.jpg",
             "talk_link": "./static/vid/kyles_go_talk_2014_07_05.webm"
         }
+    ],
+    "ABOUTS": [
+        "#infoforcefeed is on irc.freenode.net. Come join us.",
+        "You know suckless? Well we essentially suckmore sometimes.",
+        "We all like to code and we each have our favorite languages, but Python and C seem to be the most popular among the group.",
+        "We have dreams of a crypto-anarchist-potato-tomato farm.",
+        "This \"about\" is a bullet point list that even YOU can contribute to. JUST GRESHUNKEL IT."
     ]
 }
 
