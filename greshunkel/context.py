@@ -57,6 +57,12 @@ BASE_CONTEXT = {
             "description": "Ad-hoc presentation nijotz gave on his <a href=\"/projects.html\">shitstream</a> project. Link is to full talk, 114MB.",
             "img": "./static/img/nick_shitstream_preview.jpg",
             "talk_link": "./static/vid/nick_shitstream_2014-05-24.webm"
+        },
+        {
+            "title": "Golang General",
+            "description": "Semi-prepared talk on Go, go-routines and interesting finds while porting tenyks. Vid is ~200MB.",
+            "img": "./static/img/kyles_go_talk.jpg",
+            "talk_link": "./static/vid/kyles_go_talk_2014_07_05.webm"
         }
     ]
 }
