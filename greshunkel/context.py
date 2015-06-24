@@ -27,7 +27,7 @@ BASE_CONTEXT = {
         },
         {
             "title": "shitstream",
-            "description": "Radio music service and streaming written entirely in bash.",
+            "description": "Radio music service and streaming.",
             "link": "https://github.com/nijotz/shitstream"
         },
         {
@@ -54,7 +54,7 @@ BASE_CONTEXT = {
             "title": "Entropy Meter",
             "description": "An entropy meter that measures Jira chaos via the Dashing web framework. Built in Ruby for some reason.",
             "link": "https://github.com/nijotz/entropy-meter"
-        }
+        },
     ],
     "TALKS": [
         {
