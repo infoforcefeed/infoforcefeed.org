@@ -51,6 +51,11 @@ BASE_CONTEXT = {
             "link": "https://github.com/colby/dyno"
         },
         {
+            "title": "Solarwind",
+            "description": "Dead simple static site generator written in Go.",
+            "link": "https://github.com/kyleterry/solarwind"
+        },
+        {
             "title": "Entropy Meter",
             "description": "An entropy meter that measures Jira chaos via the Dashing web framework. Built in Ruby for some reason.",
             "link": "https://github.com/nijotz/entropy-meter"
