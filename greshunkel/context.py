@@ -46,6 +46,11 @@ BASE_CONTEXT = {
             "link": "http://meta.infoforcefeed.org/"
         },
         {
+            "title": "Dyno",
+            "description": "A basic blog framework in shell. Enough movement to get you where you need to go.",
+            "link": "https://github.com/colby/dyno"
+        },
+        {
             "title": "Entropy Meter",
             "description": "An entropy meter that measures Jira chaos via the Dashing web framework. Built in Ruby for some reason.",
             "link": "https://github.com/nijotz/entropy-meter"
