@@ -133,7 +133,7 @@ def build_doc_context(default_context):
     versions.append("master")
 
     for version in versions:
-        print "Checking out {}".format(version)
+        print("Checking out {}".format(version))
         cmd = "cd OlegDB && git checkout {} &> /dev/null".format(version)
         subprocess.call(cmd, shell=True)
         headers = ["oleg.h", "defs.h"]
@@ -143,7 +143,7 @@ def build_doc_context(default_context):
             try:
                 oleg_header = open(header_file)
             except IOError as e:
-                print e
+                print(e)
                 continue
 
             docstring_special = ["DEFINE", "ENUM", "STRUCT", "DESCRIPTION",
